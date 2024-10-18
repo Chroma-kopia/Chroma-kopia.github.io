@@ -18,10 +18,11 @@ body {
 #nameInput {
     padding: 10px;
     font-size: 18px;
+    margin-top: 20px; /* Add margin to space it from the output text */
 }
 
 .output {
-    margin-top: 20px;
+    margin-bottom: 20px; /* Add space below the output text */
     font-size: 36px;
     font-family: 'Poleno', sans-serif; /* Apply Poleno font */
     display: inline-block;
