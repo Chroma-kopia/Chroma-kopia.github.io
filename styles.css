@@ -1,1 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
 
+.container {
+    margin-top: 50px;
+}
+
+#nameInput {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.output {
+    margin-top: 20px;
+    font-size: 36px;
+    font-family: 'Poleno', sans-serif; /* Assuming Poleno is imported */
+    display: inline-block;
+    position: relative;
+}
+
+/* Horn for first letter */
+.output span:first-child::before {
+    content: '';
+    position: absolute;
+    top: -20px;  /* Position above the letter */
+    left: -5px;  /* Adjust horizontal position */
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid black; /* Black horn, you can change the color */
+}
+
+/* Horn for last letter */
+.output span:last-child::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: -5px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid black;
+}
