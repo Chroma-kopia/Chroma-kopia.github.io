@@ -1,9 +1,14 @@
+@font-face {
+    font-family: 'Poleno';
+    src: url('fonts/Poleno.otf') format('opentype'); /* Ensure this matches your actual font file name */
+}
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 20px;
-    background-color: green; /* This will change the background to green */
-    color: black; /* Optional: This changes the text color to white for better contrast */
+    background-color: green; /* Background color set to green */
+    color: white; /* Text color set to white for contrast */
 }
 
 .container {
@@ -18,7 +23,26 @@ body {
 .output {
     margin-top: 20px;
     font-size: 36px;
-    font-family: 'Poleno', sans-serif;
+    font-family: 'Poleno', sans-serif; /* Apply Poleno font */
     display: inline-block;
     position: relative;
+}
+
+/* Optional: Style for the horn on letters */
+.output::before, .output::after {
+    content: ' '; /* Add an empty space before and after the text */
+    display: inline-block;
+    height: 10px; /* Adjust height for horn effect */
+    width: 10px; /* Adjust width for horn effect */
+    background: black; /* Horn color */
+    border-radius: 50%; /* Make it round */
+    position: absolute;
+}
+
+.output::before {
+    left: -15px; /* Adjust position for left horn */
+}
+
+.output::after {
+    right: -15px; /* Adjust position for right horn */
 }
