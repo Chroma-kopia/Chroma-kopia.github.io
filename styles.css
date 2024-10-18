@@ -8,7 +8,7 @@ body {
     text-align: center;
     padding: 20px;
     background-color: green; /* Background color set to green */
-    color: black; /* Text color set to white for contrast */
+    color: black; /* Text color set to black for contrast */
 }
 
 .container {
@@ -36,4 +36,21 @@ body {
 #nameInput:hover {
     background-color: rgba(255, 255, 255, 0.2); /* Slightly change background on hover */
     color: white; /* Keep text color white */
+}
+
+/* Styles for the image container */
+.image-container {
+    position: relative; /* Positioning context for the image */
+    width: 300px; /* Adjust width as necessary */
+    margin: 20px auto; /* Center the image */
+}
+
+.hover-shadow {
+    width: 100%; /* Makes the image responsive */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for the shadow and transform */
+}
+
+.hover-shadow:hover {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Shadow on hover */
+    transform: translateX(-10px); /* Move the image to the left */
 }
