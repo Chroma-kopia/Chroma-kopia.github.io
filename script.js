@@ -7,7 +7,7 @@ function generateName() {
         return;
     }
 
-    const randomSuffixes = [' Jr.', ' II', ' III', ' IV', ' the Great']; // Example suffixes
+    const randomSuffixes = [' Jr.', ' II', ' III', ' IV', ' the Great', '']; // Example suffixes
     const randomIndex = Math.floor(Math.random() * randomSuffixes.length); // Random index for suffix
 
     // Generate a random name
