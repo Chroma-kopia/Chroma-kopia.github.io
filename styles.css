@@ -25,25 +25,4 @@ body {
     margin-bottom: 20px; /* Add space below the output text */
     font-size: 36px;
     font-family: 'Poleno', sans-serif; /* Apply Poleno font */
-    display: inline-block;
-    position: relative;
-}
-
-/* Optional: Style for the horn on letters */
-.output::before, .output::after {
-    content: ' '; /* Add an empty space before and after the text */
-    display: inline-block;
-    height: 10px; /* Adjust height for horn effect */
-    width: 10px; /* Adjust width for horn effect */
-    background: black; /* Horn color */
-    border-radius: 50%; /* Make it round */
-    position: absolute;
-}
-
-.output::before {
-    left: -15px; /* Adjust position for left horn */
-}
-
-.output::after {
-    right: -15px; /* Adjust position for right horn */
 }
