@@ -3,7 +3,7 @@ body {
     text-align: center;
     padding: 20px;
     background-color: green; /* This will change the background to green */
-    color: Black; /* Optional: This changes the text color to white for better contrast */
+    color: black; /* Optional: This changes the text color to white for better contrast */
 }
 
 .container {
